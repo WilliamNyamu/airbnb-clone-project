@@ -68,3 +68,8 @@
  - Allow only authorized users to perform certain CRUD actions such as hotel management.
 ### Rate Limiting
  - Controlling how often a particular action such as booking can happen in a specific time period.
+
+
+## CI/CD Pipeline
+- To automate build, test, and deploy code changes for production.
+- Tools: Docker, Kubernetes, Github Actions

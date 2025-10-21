@@ -28,3 +28,19 @@
 - Containerization tool for consistent developmnet and deployment environments
 ### CI/CD Pipelines
 - Automated pipelines for testing and deploying code changes.
+
+
+## Database Design
+### User
+- Key fields include: id(pk), email(unique), first_name, last_name, profile_picture, phone_number.
+### Property
+- Key fields include: id, name, location, price, owner, propery_images, 
+  - A user can have multiple properties
+### Booking
+- Key fields include: id(pk), user, property, booked_date, duration_stay,
+    - A booking is for a particular user.
+### Review
+- Key fields include: id(pk), user, property, comment, rating, created_date
+  - A property can have multiple reviews, but a user can have only one review for a particular property
+### Payment
+- Key fields include: id(pk), user, price, payment_date, property
